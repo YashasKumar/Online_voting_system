@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <div class="frame">
+      <div class="overlap-group-wrapper">
+        <div class="overlap-group">
+          <div class="ellipse"></div>
+          <div class="div"></div>
+          <div class="ellipse-2"></div>
+          <div class="ellipse-3"></div>
+          <img class="img" src="/static/ellipse.jpg" />
+          <div class="text-wrapper">ONLINE VOTING</div>
+          
+          <div class="overlap">
+           <img class="element" src="/static/vote.jpg" />
+          </div>
+          
+          <p class="hm-hi-lif-eis">
+            <span class="span"></span>
+            <span class="text-wrapper-2">Voting is the cornerstone of democracy, empowering citizens to voice their preferences and shape the future of their nation. It embodies the essence of civic duty, promoting equality and accountability within society. By participating in elections, individuals contribute to the collective decision-making process, ensuring a government that represents the will of the people.</span>
+          </p>
+          <div class="navbar">
+            <!-- <a href="#" class="right"></a> -->
+            <a href="/logout/">Log out</a>
+            <a href="{{url_for('result')}}">Result</a>
+            <a href="{{url_for('voter_candidate_details')}}">VOTE</a>
+            <a href="#" class="left"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

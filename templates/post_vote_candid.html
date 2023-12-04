@@ -1,0 +1,33 @@
+<html>
+<head>
+    <link rel="stylesheet" href="/static/common.css">
+</head>
+<body>
+    <h1>
+        Candidate Details
+    </h1>
+    <table cellpadding="20%">
+        <thead>
+        <tr class="sweet">
+            <th>Roll_No</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Manifesto</th>
+        </tr>
+        </thead>
+        <tbody>
+            {% for row in data %} 
+                <tr class="sugar">
+                    <td>{{row[0]}}</td>
+                    <td>{{row[1]}}</td>
+                    <td>{{row[2]}}</td>
+                    <td>{{row[3]}}</td>
+                    <td>{{row[4]}}</td>
+                </tr>
+            {% endfor %}    
+        </tbody>
+    </table>
+</body>
+
+</html>

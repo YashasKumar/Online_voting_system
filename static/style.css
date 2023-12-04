@@ -1,0 +1,219 @@
+
+.frame {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height:100%;
+    width: 100%;
+  }
+  @media (max-width: 768px) {
+    .frame {
+      flex-direction: column; /* Stack elements vertically */
+      align-items: center; /* Center content horizontally */
+    }
+    .navbar {
+      width: 100%; /* Expand to full width */
+      float: none; /* Remove float for stacking */
+      margin-top: 20px; /* Adjust top margin */
+    }
+    .navbar a {
+      float: none; /* Remove float for stacking */
+      text-align: center; /* Center the text */
+      margin-right: 0; /* Remove right margin */
+      margin-bottom: 10px; /* Adjust bottom margin */
+    }
+  }
+  
+  
+  .frame .overlap-group-wrapper {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .frame .overlap-group {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #fdfeff;
+  }
+
+  .bubbles{
+    z-index: 0;
+    float: left;
+  }
+  
+  /* .frame .ellipse {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 50px;
+    left: 1250px;
+    border-radius: 51.5px/50.5px;
+    background: linear-gradient(180deg, rgb(80.25, 161.38, 187) 0%, rgb(194.88, 223.61, 232.69) 100%);
+    z-index: -1;
+  } */
+  
+  .frame .div {
+    position: absolute;
+    width: 39px;
+    height: 37px;
+    top: 263px;
+    left: 1150px;
+    border-radius: 19.5px/18.5px;
+    background: linear-gradient(180deg, rgb(21.95, 143.35, 181.69) 0%, rgba(15.16, 30.49, 35.33, 0) 100%);
+  }
+  
+  .frame .ellipse-2 {
+    position: absolute;
+    width: 37px;
+    height: 38px;
+    top: 154px;
+    left: 1183px;
+    border-radius: 18.5px/19px;
+    background: linear-gradient(180deg, rgb(5.74, 59.52, 76.5) 0%, rgba(42.71, 68.39, 76.5, 0) 100%);
+  }
+  
+  .frame .ellipse-3 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 170px;
+    left: 1290px; 
+    border-radius: 60px;
+    background: linear-gradient(180deg, rgb(65.89, 113.52, 128.56) 0%, rgba(36.58, 52.38, 57.37, 0) 100%);
+  }
+  
+  .frame .img {
+    position: absolute;
+    width: 123px;
+    height: 111px;
+    top: 21px;
+    left: 24px;
+  }
+  @media (max-width: 480px) {
+    .text-wrapper {
+      font-size: 60px; /* Adjust font size */
+    }
+    .hm-hi-lif-eis {
+      font-size: 20px; /* Adjust font size */
+    }
+  }
+  .frame .text-wrapper {
+    position: absolute;
+    top: 200px;
+    left: 42px;
+    font-family: "JetBrains Mono-Regular", Helvetica;
+    font-weight: 400;
+    color: #151414;
+    font-size: 120px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+ 
+  
+  .frame .overlap {
+    position: absolute;
+    width: 312px;
+    height: 257px;
+    top: 200px;
+    left: 419px;
+  }
+  
+  .frame .ellipse-4 {
+    position: absolute;
+    width: 237px;
+    height: 257px;
+    top: 450px;
+    left: 1175px;
+  }
+  
+  .frame .element {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: 100px;
+    left:600px;
+    object-fit: cover;
+  }
+  
+  .frame .hm-hi-lif-eis {
+    position: absolute;
+    width: 500px;
+    top: 400px;
+    left: 150px;
+    font-family: "JetBrains Mono-Regular", Helvetica;
+    font-weight: 400;
+    color: transparent;
+    font-size: 23px;
+    
+    letter-spacing: 2px;
+    line-height: normal;
+  }
+  
+  .frame .span {
+    color: #161515;
+  }
+  
+  .frame .text-wrapper-2 {
+    color: #171616;
+  }
+  
+  .frame .div-wrapper {
+    position: absolute;
+    width: 173px;
+    height: 29px;
+    top: 307px;
+    left: 143px;
+    background-image: url(./img/rectangle-12.svg);
+    background-size: 100% 100%;
+  }
+  
+  .frame .text-wrapper-3 {
+    position: absolute;
+    width: 128px;
+    top: 7px;
+    left: 22px;
+    font-family: "JetBrains Mono-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .navbar {
+    width:75%;
+    float:right;
+    padding-top:100px;
+    
+    overflow: hidden; /* Hide overflow */
+    background-color: #ffffff; /* Dark background color */
+
+  }
+  
+  /* Style the navigation bar links */
+  .navbar a {
+    font-family:Helvetica  ;
+    float: right; /* Make sure that the links stay side-by-side */
+    display: block; /* Change the display to block, for responsive reasons (see below) */
+    color: rgb(20, 19, 19); /* White text color */
+    text-align: right; /* Center the text */
+    padding: 14px 20px; /* Add some padding */
+    text-decoration: none; /* Remove underline */
+    margin-right:5%;
+  }
+  
+  /* Right-aligned link */
+  .navbar a.right {
+    float: right; /* Float a link to the right */
+    margin-right:20%;
+
+  }
+  
+  /* Change color on hover/mouse-over */
+  .navbar a:hover {
+    background-color: #ddd; /* Grey background color */
+    color: black; /* Black text color */
+  }

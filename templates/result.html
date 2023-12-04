@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Election Result</title>
+    <style>
+        .container {
+            text-align: center;
+            margin-top: 0px;
+            font-size: 24px;
+            width: 100%;
+            background-color: black;
+            color: white;
+            padding: 3px;
+        }
+        p{
+            font-family:Helvetica;
+        }
+        .chart {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        img {
+            border: 2px solid black;
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            box-shadow: 0 10px 14px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+      </style>
+</head>
+<body>
+    <div class="container">
+        <p>Election was won by
+            {% for row in data %}
+                <b>{{row[0]}}</b>
+            {% endfor %}
+        </p>
+    </div>
+    <div class="chart">
+        <img src="/static/my_plot.png" alt="Election Chart">
+    </div>
+
+</body>
+</html>

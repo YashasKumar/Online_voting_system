@@ -1,0 +1,43 @@
+<html>
+<head>
+    <link rel="stylesheet" href="/static/common.css">
+</head>
+<body>
+    <h1>
+        Candidate Details
+    </h1>
+    <div><span>
+    <table cellpadding="20%">
+        <thead>
+        <tr class="sweet">
+            <th>Roll_No</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th style="max-width: 100px;">Manifesto</th>
+            <th>VOTE</th>
+        </tr>
+        </thead>
+        <tbody>
+            {% for row in data %} 
+                <tr class="sugar">
+                    <td>{{row[0]}}</td>
+                    <td>{{row[1]}}</td>
+                    <td>{{row[2]}}</td>
+                    <td>{{row[3]}}</td>
+                    <td style="max-width: 100px;">{{row[4]}}</td>
+                    <td class="delete"><a href="/update/{{row[0]}}" onclick="voted()"  methods="POST">Vote</a></td>
+                </tr>
+                {% endfor %}    
+            </tbody>
+    </table>
+    </span>
+    </div>
+    <script>
+        function voted(){
+            confirm("Are you sure?")
+        }
+    </script>
+</body>
+</html>
+

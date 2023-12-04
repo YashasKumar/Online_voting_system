@@ -1,0 +1,148 @@
+
+ 
+        body {
+            font-family: Arial, sans-serif;
+            background-image: linear-gradient(to bottom, #8fdef4 , #29f4e0);
+            margin: 0;
+            padding: 0;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            /* height: 100vh; */
+            margin-top: 100px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #3407e8;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056a5;
+        }
+
+        .add-candidate-button {
+            display: inline-block;
+            border-radius: 5px;
+            background-color: #17434f;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 17px;
+            padding: 10px;
+            width: 150px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+            margin-left: 50px;
+        }
+
+
+
+        .add-candidate-button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .add-candidate-button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .add-candidate-button:hover span {
+            padding-right: 25px;
+        }
+
+        .add-candidate-button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+        table {
+            margin-top: 50px;
+            margin-left: 175px;
+            width: 75%;
+            justify-content: center;
+            --border: 1px solid black;
+            border-radius: 10px;
+            height: 25%;
+            border-spacing: 0;
+            border-collapse: separate;
+            border: var(--border);
+            overflow: hidden;
+            border-right: var(--border);
+            
+        }
+
+        .sweet{
+            background-color: #0a7587;
+            padding: 5px;
+            border-style:solid;
+            height: 50px;
+            
+
+        }
+        .sugar{
+            background-color: #fff;
+            border-style:solid;
+        }
+
+        th{
+            border: 1px;
+            border-style: solid;
+            width: 100px;
+        }
+        td{
+            border: 1px;
+            border-style: solid;
+        }
+        a {
+            text-decoration: none;
+            color: #0074cc;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        h1{
+            background-color: black;
+            text-align: center;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 25px;
+        }
+        
+        .delete a{
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            border: 2px solid black;
+            box-shadow: 2px 2px;
+            padding: 4px;
+        }
+
+        .delete a:hover{
+            text-decoration: none;
+            box-shadow: 4px 4px;
+        }

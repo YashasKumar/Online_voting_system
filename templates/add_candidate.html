@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/static/styleadd.css">
+</head>
+<body>
+    <div class="heading"><h1>ADD CANDIDATE</h1></div>
+    <div class="pic"><img src="/static/add_candid_image.jpg" width="100%";height="500px"/></div>
+    <div class="container">
+        
+        <form action="" method="POST">
+            <div class="form-group">
+                <input type="text" name="roll" placeholder="Enter roll number" id="roll">
+            </div>
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Enter name" id="name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="email" placeholder="Enter college mail ID" id="email">
+            </div>
+            <div class="form-group">
+                <input type="number" name="phone" placeholder="Enter phone number" id="phone">
+            </div>
+            <div class="form-group">
+                <textarea name="bio" placeholder="Enter bio" id="bio"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <input type="submit" onclick="validation()">
+            </div>
+        </form>
+    </div>
+    <script>
+        function validation(){
+            var name = String(document.getElementById("name").value);
+            var emailId = String(document.getElementById("email").value);
+            var rollno = String(document.getElementById("roll").value);
+            var mobileNumber = Number(document.getElementById("phone").value);
+            var bio= String(document.getElementById("bio").value);
+            var len = password.length;
+            var len1 = mobileNumber.length;
+            
+             if(name == '' || emailId == '' || rollno=='' || bio == '' || mobileNumber == ''){
+                 alert("Enter all the fields");
+                 return False;
+             }
+              else{
+              
+                if(!isNaN(name)){
+                alert("Enter only alphabets : ");
+                return False;
+                }    
+                if(isNaN(mobileNumber) && len1!=10){
+                  alert("Enter correct format of Mobile Number");
+                  return False;  
+             }
+            }
+          }
+    </script>
+</body>
+</html>
+
+

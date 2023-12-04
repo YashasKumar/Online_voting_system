@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="globals.css" />
+  <link rel="stylesheet" href="/static/style_signup_login.css" />
+</head>
+
+<body>
+  <div class="cont">
+    <div class="back">
+      <div class="backimage">
+        <div class="right_side">
+          <div class="getinfo">
+            <form action="/signup/" method="POST" >
+              <div class="heading">Email</div><br>
+              <input type="text" name="email" id="email">
+              <br><br>
+              <div class="heading">Roll</div><br>
+              <input type="text" name="roll" id="roll">
+              <br><br>
+              <div class="heading">Name</div><br>
+              <input type="text" name="name" id="name">
+              <br><br>
+              <div class="heading">Password</div><br>
+              <input type="password" name="password" id="password">
+              <br><br><br>
+              <div class="LOGIN-SIGNUP">
+                <a href="/login_page/">LOGIN </a> | <a href="/signup_page/">SIGNUP</a>
+              </div>
+          </div>
+          <input type="submit" name="subbutton" class="submit-button" onclick="validation()">
+          </form>
+        </div>
+        <div class="left_side">
+          <div class="text">
+            <div class="comm">“</div>
+            <p class="conte">
+              The Ballot<br /><br>
+              Is Stronger Than<br /><br>
+              The Bullet
+            </p>
+            <div class="comm1">“</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script> function validation() {
+      var email = document.getElementById('email').value;
+      var roll = document.getElementById('roll').value;
+      var name = document.getElementById('name').value;
+      var password = document.getElementById('password').value;
+      // check email is not empty 
+      if (email === '') {
+        alert('Please enter your email address');
+        return false;
+      }
+      // check email is in valid format 
+      var emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+      if (!emailRegex.test(email)) {
+        alert('Please enter a valid email address');
+        return false;
+      }
+      // check roll is not empty 
+      if (roll === '') {
+        alert('Please enter your roll number');
+        return false;
+      }
+      // check name is not empty 
+      if (name === '') {
+        alert('Please enter your name');
+        return false;
+      }
+      // check password is not empty 
+      if (password === '') {
+        alert('Please enter your password');
+        return false;
+      }
+      // check password is at least 8 characters long 
+      // check password contains at least one uppercase letter, and one number 
+      /*var passwordRegex = /^(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
+      if (!passwordRegex.test(password)) {
+        alert('Please enter a password that includes at least one uppercase letter, one lowercase letter, and one number');
+        return false;
+      }*/
+    } 
+  </script>
+
+</body>
+
+</html>

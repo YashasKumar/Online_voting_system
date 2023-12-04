@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/common.css">
+    </head>
+
+<body>
+    <h1>
+        Candidate Details
+    </h1>
+    <a href="{{url_for('add_candidate')}}" class="add-candidate-button">Add Candidate</a>
+    <table cellpadding="20%">
+        <thead>
+        <tr class="sweet">
+            <th>Roll_No</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Manifesto</th>
+            <th>Delete</th>
+        </tr>
+        </thead>
+        <tbody>
+            {% for row in data %} 
+                <tr class="sugar">
+                    <td>{{row[0]}}</td>
+                    <td>{{row[1]}}</td>
+                    <td>{{row[2]}}</td>
+                    <td>{{row[3]}}</td>
+                    <td>{{row[4]}}</td>
+                    <td class="delete"><a href="/delete/{{row[0]}}" id="{{row[0]}}">Delete</a></td>
+                    <p>{{row.roll_no}}</p>
+                </tr>
+            {% endfor %}    
+        </tbody>
+    </table>
+</body>
+
+</html>
